@@ -2,13 +2,15 @@ import React from "react";
 
 //PAGE CONTENTS
 import Routes from "./Routes";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      {/* ADD NAV BAR */}
+      <Nav />
       <Routes />
-      {/* ADD FOOTER */}
+      <Footer />
     </div>
   );
 }
