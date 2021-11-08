@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import { Box, Typography } from "@mui/material";
 
 class Websites extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <Box sx={{ textAlign: "center" }}>
@@ -13,7 +9,6 @@ class Websites extends Component {
           variant="h1"
           sx={{
             color: "black",
-            // fontFamily: "Architects Daughter",
             textShadow: "1px 1px 10px magenta",
             opacity: "0.7",
             fontSize: {

@@ -10,17 +10,12 @@ import {
   Tooltip,
   Link,
 } from "@mui/material";
-import PhotoCameraBackIcon from "@mui/icons-material/PhotoCameraBack";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 import data from "../data.json";
 
 class Games extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const games = data.filter((project) => project.type === "game");
     const defaultImg = "https://i.imgur.com/Hg5jzQOt.png";

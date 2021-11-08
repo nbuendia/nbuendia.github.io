@@ -13,10 +13,6 @@ import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined
 import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
 
 class Home extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <Box
