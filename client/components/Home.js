@@ -50,8 +50,16 @@ class Home extends Component {
             />
 
             <CardContent sx={{ marginBottom: "-10px" }}>
-              <Typography variant="h6">GAMES</Typography>
-              <Typography variant="subtitle1">
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: "25px", md: "18px", lg: "20px" } }}
+              >
+                GAMES
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{ fontSize: { xs: "20px", md: "12px", lg: "15px" } }}
+              >
                 STEP INTO MY PIXEL PERFECT WORLD OF GAMES
               </Typography>
             </CardContent>
@@ -62,9 +70,7 @@ class Home extends Component {
                   startIcon={<SportsEsportsOutlinedIcon />}
                   variant="outlined"
                   color="primary"
-                  style={{
-                    fontSize: "large",
-                  }}
+                  sx={{ fontSize: { xs: "large", md: "small", lg: "large" } }}
                 >
                   VIEW PROJECTS
                 </Button>
@@ -99,8 +105,16 @@ class Home extends Component {
             />
 
             <CardContent sx={{ marginBottom: "-10px" }}>
-              <Typography variant="h6">WEBSITES</Typography>
-              <Typography variant="subtitle1">
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: "25px", md: "18px", lg: "20px" } }}
+              >
+                WEBSITES
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{ fontSize: { xs: "20px", md: "12px", lg: "15px" } }}
+              >
                 WECOME TO THE LAND OF CREATIVITY
               </Typography>
             </CardContent>
@@ -111,10 +125,7 @@ class Home extends Component {
                   endIcon={<WebOutlinedIcon />}
                   variant="outlined"
                   color="primary"
-                  style={{
-                    // color: "#121111",
-                    fontSize: "large",
-                  }}
+                  sx={{ fontSize: { xs: "large", md: "small", lg: "large" } }}
                 >
                   VIEW PROJECTS
                 </Button>
