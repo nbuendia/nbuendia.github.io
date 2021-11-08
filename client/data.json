@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "type": "game",
+    "name": "Astro Dodge",
+    "description": "Astro Dodge is a simple game based on a real life dog. He roams the back yard, chasing squirrels and sniffing flowers when all of a sudden, it begins to rain. But wait… what’s falling from he sky? Cats? Fireworks? Mailmen?? OH NO! Astro is afraid of all these things, what’s he going to do? Astro must avoid all his fears if he wishes to make it back inside! Wait a minute… I see other things falling form sky too, I see food, a bone and a tennis ball! Seems like these things encourage Astro to keep on dodging! Will he make it back inside with his mom?",
+    "status": "work-in-progress",
+    "github": "https://github.com/nbuendia/AstroDodge",
+    "youtube": "https://youtu.be/W4B2Pxa13l0",
+    "img": "https://i.imgur.com/nSF7O0mt.png"
+  },
+  {
+    "id": 2,
+    "type": "game",
+    "name": "Space Adventures",
+    "description": "Ever thought about moving to mars? Space adventures is what I believe to be a pretty close simulation of moving out from planet earth. You leave the planet in your brand new, three door, missile blasting rocket ship on a new adventure through space. Theres a few meteors that get in your way but it isn’t anything you can’t handle, that’s what the missles are for. Everything seemed to be going great until you notice the alien ships heading straight for your ship! Looks like the missiles have more than one job here! Thats okay though, I’ve also spotted hearts and stars that can fuel my rocket to fight back! Three months later… are we at mars yet?",
+    "status": "work-in-progress",
+    "github": "https://github.com/nbuendia/space-adventures",
+    "youtube": "https://youtu.be/oCxJ82LfKCE",
+    "img": ""
+  }
+]
