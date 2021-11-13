@@ -5,6 +5,7 @@ import { AppBar, Box, Typography, Button, Tooltip, Fade } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import StickyNote2Icon from "@mui/icons-material/StickyNote2";
+import InfoIcon from "@mui/icons-material/Info";
 
 const Nav = () => (
   <Box>
@@ -62,12 +63,20 @@ const Nav = () => (
               target="_blank"
               rel="noopener"
             >
-              <Button color="info" style={{ marginRight: "50px" }}>
+              <Button color="info">
                 <StickyNote2Icon
                   sx={{ fontSize: { xs: "30px", md: "35px" } }}
                 />
               </Button>
             </a>
+          </Tooltip>
+
+          <Tooltip title="ABOUT ME" TransitionComponent={Fade}>
+            <Link to={"/aboutme"}>
+              <Button color="info">
+                <InfoIcon sx={{ fontSize: { xs: "30px", md: "35px" } }} />
+              </Button>
+            </Link>
           </Tooltip>
         </Box>
       </Box>
