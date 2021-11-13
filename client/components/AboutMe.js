@@ -1,76 +1,17 @@
 import React, { Component } from "react";
-import { Box, Button, Container, Typography, TextField } from "@mui/material";
-import LoadingButton from "@mui/lab/LoadingButton";
-import SendIcon from "@mui/icons-material/Send";
-import emailjs from "emailjs-com";
+import { Box, Container, Typography } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faJs,
+  faHtml5,
+  faCss3Alt,
+  faReact,
+  faNode,
+  faGit,
+} from "@fortawesome/free-brands-svg-icons";
 
 class AboutMe extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      name: "",
-      email: "",
-      subject: "",
-      feedback: "",
-      loading: false,
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-
-    this.setState({
-      loading: true,
-    });
-
-    emailjs
-      .sendForm(
-        "service_31b09ar",
-        "template_b60br0k",
-        event.target,
-        "user_h7TZnSQEoKtsXhleO6H3m"
-      )
-      .then(
-        (result) => {
-          alert("SUCCESS! Your message has been sent!");
-          console.log(result.text);
-
-          this.setState({
-            loading: false,
-          });
-        },
-        (error) => {
-          alert("OH NO! Something went wrong! Please try again.");
-          console.log(error.text);
-
-          this.setState({
-            loading: false,
-          });
-        }
-      );
-
-    this.setState({
-      name: "",
-      email: "",
-      subject: "",
-      feedback: "",
-    });
-  }
-
   render() {
-    const { name, email, subject, feedback, loading } = this.state;
-    const { handleChange, handleSubmit } = this;
-
     return (
       <Container
         sx={{
@@ -84,7 +25,7 @@ class AboutMe extends Component {
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", lg: "row" },
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
@@ -92,181 +33,101 @@ class AboutMe extends Component {
             marginBottom: "50px",
           }}
         >
-          <Box>
-            <img
-              src="https://i.imgur.com/JPtVp73b.jpg"
-              alt="Profile Picture"
-              width="300px"
-              height="300px"
-              style={{
-                borderRadius: "150px",
-                marginBottom: "25px",
-                boxShadow: "1px 1px 15px black",
-              }}
-            />
-          </Box>
+          <img
+            src="https://i.imgur.com/JPtVp73b.jpg"
+            alt="Profile Picture"
+            width="300px"
+            height="300px"
+            style={{
+              borderRadius: "150px",
+              marginBottom: "25px",
+              boxShadow: "1px 1px 15px black",
+            }}
+          />
 
-          <Box sx={{ marginLeft: "25px" }}>
-            <Typography
-              variant="h4"
-              sx={{
-                textShadow: "10px 1px 10px black",
-                opacity: "0.8",
-                marginBottom: "15px",
-              }}
-            >
-              <u>ABOUT ME</u>
-            </Typography>
-
-            <Typography
-              variant="body1"
-              sx={{
-                textShadow: "10px 1px 10px black",
-                opacity: "0.8",
-                marginBottom: "35px",
-              }}
-            >
-              Hey! Have we met? Well, just in case you haven’t we haven’t, let
-              me introduce myself, my name is Nicole Buendia and I love all
-              things art and design. I’ve been a professional bartender for the
-              past 10 years where I’ve been able to express my creativity
-              through my cocktails. Learning to bartend was fun, exciting and I
-              always found myself learning something new even after all those
-              years.
-              <br />
-              <br />
-              About a year ago I began to teach myself C# to be able to develop
-              games from start to finish and quickly realized not only do I love
-              art and design but going though the process of bugs in code,
-              rewriting and adjusting motivated me to learn JavaScript and enter
-              a bootcamp where I learned a stack of new technologies. In a short
-              3 months I worked in many new projects, learned to work in a team
-              and ventured into a world of endless possibilities.
-              <br />
-              <br />I now can confidently say, I am a Software engineer and I’ll
-              never stop trying to learn more and be better. Like what you see
-              here? Checkout my GitHub and LinkedIn in the footer or send me an
-              email below! Can’t wait to hear from you!
-            </Typography>
-          </Box>
-        </Box>
-
-        <Box>
           <Typography
             variant="h4"
             sx={{
-              fontFamily: "Architects Daughter",
               textShadow: "10px 1px 10px black",
               opacity: "0.8",
-              marginBottom: "25px",
+              marginBottom: "15px",
             }}
           >
-            <u>GET IN TOUCH</u>
+            <u>ABOUT ME</u>
           </Typography>
 
-          <form autoComplete="off" onSubmit={handleSubmit}>
-            <TextField
-              color="primary"
-              type="text"
-              name="name"
-              value={name}
-              onChange={handleChange}
-              label="Name"
-              variant="outlined"
-              fullWidth
-              required
+          <Typography
+            variant="body1"
+            sx={{
+              textShadow: "10px 1px 10px black",
+              opacity: "0.8",
+              marginBottom: "35px",
+            }}
+          >
+            Hey! Have we met? Well, just in case we haven’t, let me introduce
+            myself, my name is Nicole Buendia and I love all things art and
+            design. I’ve been a professional bartender for the past 10 years
+            where I’ve been able to express my creativity through my cocktails.
+            Bartending was always fun, exciting and I always found myself
+            learning something new even after all those years.
+            <br />
+            <br />
+            About 2 years ago I began to reminisce on my art and talent I once
+            coveted and decided to once again start exploring my fine art
+            skills. After much thought I began to realize that it’s now a new
+            era and digital art is the way to go. With so many new programs and
+            softwares available I was slightly overwhelmed on where to begin and
+            as I browsed through online courses I came across game development.
+            I never thought of this as an option but as I looked into it more
+            and more I realized that I can accomplish this and how much I would
+            enjoy this. After a few short months I learned the fundamentals of
+            C# and even started to build a game of my own.
+            <br />
+            <br />
+            How did I end up learning JavaScript you ask? Im almost there… bare
+            with me. Approximately a year ago, I began to wonder what else I can
+            learn and what other types of projects I can build. JavaScript
+            enters the chat. I hit the books (Not real books… more like websites
+            & online courses) and thought I can definitely get used to this. I
+            began to research schools and bootcamps to get a more in depth
+            education and after much deliberation, I chose the Grace Hopper
+            Program at Fullstack Academy.
+            <br />
+            <br />
+            With the help of The Grace Hopper Program and my therapist (just
+            kidding… or am I?) I graduated the program in just a few short
+            months. The program turned me into a well-rounded full-stack web
+            developer with extensive knowledge in,
+            <br />
+            <Box
               sx={{
-                marginBottom: "10px",
-                "& .MuiOutlinedInput-root": {
-                  "& > fieldset": {
-                    borderColor: "white",
-                  },
-                },
-                "& .MuiInputLabel-root": {
-                  color: "white",
-                },
+                display: "flex",
+                justifyContent: "space-between",
+                marginLeft: { xs: "50px", md: "100px", lg: "200px" },
+                marginRight: { xs: "50px", md: "100px", lg: "200px" },
               }}
-            />
-
-            <TextField
-              type="email"
-              name="email"
-              value={email}
-              onChange={handleChange}
-              label="Email"
-              variant="outlined"
-              fullWidth
-              required
-              sx={{
-                marginBottom: "10px",
-                "& .MuiOutlinedInput-root": {
-                  "& > fieldset": {
-                    borderColor: "white",
-                  },
-                },
-                "& .MuiInputLabel-root": {
-                  color: "white",
-                },
-              }}
-            />
-
-            <TextField
-              type="text"
-              name="subject"
-              value={subject}
-              onChange={handleChange}
-              label="Subject"
-              variant="outlined"
-              fullWidth
-              required
-              sx={{
-                marginBottom: "10px",
-                "& .MuiOutlinedInput-root": {
-                  "& > fieldset": {
-                    borderColor: "white",
-                  },
-                },
-                "& .MuiInputLabel-root": {
-                  color: "white",
-                },
-              }}
-            />
-
-            <TextField
-              type="text"
-              name="feedback"
-              value={feedback}
-              onChange={handleChange}
-              label="Message"
-              variant="outlined"
-              fullWidth
-              multiline
-              rows={5}
-              required
-              sx={{
-                marginBottom: "10px",
-                "& .MuiOutlinedInput-root": {
-                  "& > fieldset": {
-                    borderColor: "white",
-                  },
-                },
-                "& .MuiInputLabel-root": {
-                  color: "white",
-                },
-              }}
-            />
-
-            <LoadingButton
-              variant="outlined"
-              color="primary"
-              type="submit"
-              loading={loading}
-              loadingPosition="end"
-              endIcon={<SendIcon />}
             >
-              SEND EMAIL
-            </LoadingButton>
-          </form>
+              <FontAwesomeIcon icon={faJs} style={{ fontSize: "35px" }} />
+              <FontAwesomeIcon icon={faHtml5} style={{ fontSize: "35px" }} />
+              <FontAwesomeIcon icon={faCss3Alt} style={{ fontSize: "35px" }} />
+              <FontAwesomeIcon icon={faReact} style={{ fontSize: "35px" }} />
+              <FontAwesomeIcon icon={faNode} style={{ fontSize: "35px" }} />
+              <FontAwesomeIcon icon={faGit} style={{ fontSize: "35px" }} />
+            </Box>
+            among other technologies. (of which I can’t seem to find the icons
+            for… *sad face*)
+            <br />
+            <br />
+            The past two years have been a total rollercoaster and I’m unsure
+            how I made it through but I did. I poured my blood, sweat, tears and
+            bank account into my education and I don’t regret it, I can finally
+            see the light at the end of the tunnel and it feels great! Do you
+            remember where we started? Let me recap, Art and design, Games and
+            C# programming, JavaScript, Bootcamp admission, More JavaScript,
+            many other technologies and graduation! Here I am now, a confident
+            Software Developer who will never stop trying to learn more and be a
+            better engineer than I was yesterday.
+          </Typography>
         </Box>
       </Container>
     );
