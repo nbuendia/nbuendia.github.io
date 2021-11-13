@@ -100,6 +100,7 @@ class AboutMe extends Component {
             developer with extensive knowledge in,
             <br />
             <Box
+              component={"span"}
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
