@@ -47,7 +47,7 @@ const Nav = () => (
           </Tooltip>
 
           <Tooltip title="CONTACT INFORMATION" TransitionComponent={Fade}>
-            <Link to={"/aboutme"}>
+            <Link to={"/contact"}>
               <Button color="info">
                 <AssignmentIndIcon
                   sx={{ fontSize: { xs: "30px", md: "35px" } }}
