@@ -34,7 +34,7 @@ class AboutMe extends Component {
           }}
         >
           <img
-            src="https://i.imgur.com/JPtVp73b.jpg"
+            src="https://i.imgur.com/KSEKmHNm.jpg"
             alt="Profile Picture"
             width="300px"
             height="300px"
