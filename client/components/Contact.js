@@ -103,8 +103,11 @@ class Contact extends Component {
               fontSize: "22px",
             }}
           >
-            Like what you see here? Checkout my GitHub and LinkedIn in the
-            footer or send me an email below!
+            Like what you see here? Have comments about my page? Just want to
+            say hi?
+            <br />
+            Send me an email below or checkout my GitHub and LinkedIn in the
+            footer!
             <br />
             Can’t wait to hear from you!
           </Typography>
