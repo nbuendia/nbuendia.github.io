@@ -4,6 +4,7 @@ import { withRouter, Switch, Route } from "react-router-dom";
 //ROUTES
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
 import Games from "./components/Games";
 import Websites from "./components/Websites";
 import NotFound from "./components/NotFound";
@@ -15,6 +16,7 @@ class Routes extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/aboutme" component={AboutMe} />
+          <Route path="/contact" component={Contact} />
           <Route path="/games" component={Games} />
           <Route path="/websites" component={Websites} />
           <Route component={NotFound} />
