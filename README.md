@@ -1,8 +1,10 @@
 # Personal Portfolio
 
-<p align="center">
+![Author](https://img.shields.io/badge/Author-Nicole%20Buendia-green?style=for-the-badge&labelColor=grey)
+
+<!-- <p align="center">
     <img src="https://img.shields.io/badge/Author-Nicole%20Buendia-green?style=for-the-badge&labelColor=grey">
-<p>
+<p> -->
 
 ## Introduction
 
