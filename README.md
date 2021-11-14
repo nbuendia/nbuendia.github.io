@@ -37,11 +37,11 @@ npm run deploy
 
 ## Tech Stack
 
--JavaScript
--HTML
--CSS
--React
--GitHub Pages
+- JavaScript
+- HTML
+- CSS
+- React
+- GitHub Pages
 
 ## Social Media
 
