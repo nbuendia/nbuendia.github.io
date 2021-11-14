@@ -64,7 +64,7 @@ const Nav = () => (
 
           <Tooltip title="DOWNLOAD RESUME PDF" TransitionComponent={Fade}>
             <a
-              href="https://drive.google.com/file/d/1If7qRPZcuRAVvN1zwkSpO8fiT84P29cz/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Lit8F9XU9hywooJCn-geHkPLlcQY2ZSZ/view?usp=sharing"
               download
               target="_blank"
               rel="noopener"
