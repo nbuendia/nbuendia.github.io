@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This is a simple project showcasing some of my projects. The landing page displays two paths you can navigate to checkout two different types of projects. Think you'd enjoy Games more? Click on the left side, where you see pac-man! _(who doesnt love pac-man?)_. Maybe you appreciate the creativity of websites more, then you might want to click on the right side where you'd enter my creative mind and see what websites I've whipped up.
+This is a simple project showcasing some of my projects. The landing page displays two paths you can navigate to checkout two different types of projects. Think you'd enjoy Games more? Click on the left side, where you see pac-man! _(who doesnt love pac-man?)_. Maybe you appreciate the creativity of websites more, then you might want to click on the right side where you'd enter my creative mind and see what websites I've whipped up. Go crazy, click around, give yourself a tour of my portfolio!
 
 ## Getting Started
 
