@@ -1,7 +1,9 @@
 # Personal Portfolio
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Author-Nicole%20Buendia-green?style=for-the-badge&labelColor=grey">
+    <a href="https://nbuendia.github.io/#/">
+        <img src="https://img.shields.io/badge/Author-Nicole%20Buendia-green?style=for-the-badge&labelColor=grey">
+    </a>
 <p>
 
 ## Introduction
