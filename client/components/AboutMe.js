@@ -86,18 +86,19 @@ class AboutMe extends Component {
             <br />
             How did I end up learning JavaScript you ask? Im almost there… bare
             with me. Approximately a year ago, I began to wonder what else I can
-            learn and what other types of projects I can build. JavaScript
-            enters the chat. I hit the books (Not real books… more like websites
-            & online courses) and thought I can definitely get used to this. I
-            began to research schools and bootcamps to get a more in depth
-            education and after much deliberation, I chose the Grace Hopper
-            Program at Fullstack Academy.
+            learn and what other types of projects I can build.{" "}
+            <i>JavaScript enters the chat.</i> I hit the books{" "}
+            <i>(Not real books… more like websites & online courses)</i> and
+            thought I can definitely get used to this. I began to research
+            schools and bootcamps to get a more in depth education and after
+            much deliberation, I chose the Grace Hopper Program at Fullstack
+            Academy.
             <br />
             <br />
-            With the help of The Grace Hopper Program and my therapist (just
-            kidding… or am I?) I graduated the program in just a few short
-            months. The program turned me into a well-rounded full-stack web
-            developer with extensive knowledge in,
+            With the help of The Grace Hopper Program and my therapist{" "}
+            <i>(just kidding… or am I?)</i> I graduated the program in just a
+            few short months. The program turned me into a well-rounded
+            full-stack web developer with extensive knowledge in,
             <br />
             <Box
               component={"span"}
@@ -108,12 +109,36 @@ class AboutMe extends Component {
                 marginRight: { xs: "50px", md: "100px", lg: "200px" },
               }}
             >
-              <FontAwesomeIcon icon={faJs} style={{ fontSize: "35px" }} />
-              <FontAwesomeIcon icon={faHtml5} style={{ fontSize: "35px" }} />
-              <FontAwesomeIcon icon={faCss3Alt} style={{ fontSize: "35px" }} />
-              <FontAwesomeIcon icon={faReact} style={{ fontSize: "35px" }} />
-              <FontAwesomeIcon icon={faNode} style={{ fontSize: "35px" }} />
-              <FontAwesomeIcon icon={faGit} style={{ fontSize: "35px" }} />
+              <FontAwesomeIcon
+                icon={faJs}
+                color="#87ff42"
+                style={{ fontSize: "35px" }}
+              />
+              <FontAwesomeIcon
+                icon={faHtml5}
+                color="#ff5d1c"
+                style={{ fontSize: "35px" }}
+              />
+              <FontAwesomeIcon
+                icon={faCss3Alt}
+                color="#2e82ff"
+                style={{ fontSize: "35px" }}
+              />
+              <FontAwesomeIcon
+                icon={faReact}
+                color="#66dffa"
+                style={{ fontSize: "35px" }}
+              />
+              <FontAwesomeIcon
+                icon={faNode}
+                color="#87ff42"
+                style={{ fontSize: "35px" }}
+              />
+              <FontAwesomeIcon
+                icon={faGit}
+                color="#ff0000"
+                style={{ fontSize: "35px" }}
+              />
             </Box>
             among other technologies. (of which I can’t seem to find the icons
             for… *sad face*)
