@@ -6,7 +6,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import StickyNote2Icon from "@mui/icons-material/StickyNote2";
 import InfoIcon from "@mui/icons-material/Info";
-
 const Nav = () => (
   <Box>
     <AppBar>
@@ -22,10 +21,9 @@ const Nav = () => (
           height: "100px",
         }}
       >
-        <Box>
+        <Box sx={{ margin: "25px" }}>
           <Typography
             sx={{
-              marginLeft: "50px",
               textShadow: "1px 1px 10px cyan",
               opacity: ".7",
               fontSize: { xs: "30px", md: "40px", lg: "50px" },
@@ -37,11 +35,19 @@ const Nav = () => (
           </Typography>
         </Box>
 
-        <Box>
+        <Box sx={{ margin: "25px" }}>
           <Tooltip title="HOME PAGE" TransitionComponent={Fade}>
             <Link to={"/"}>
               <Button color="info">
                 <HomeIcon sx={{ fontSize: { xs: "30px", md: "35px" } }} />
+              </Button>
+            </Link>
+          </Tooltip>
+
+          <Tooltip title="ABOUT ME" TransitionComponent={Fade}>
+            <Link to={"/aboutme"}>
+              <Button color="info">
+                <InfoIcon sx={{ fontSize: { xs: "30px", md: "35px" } }} />
               </Button>
             </Link>
           </Tooltip>
@@ -69,14 +75,6 @@ const Nav = () => (
                 />
               </Button>
             </a>
-          </Tooltip>
-
-          <Tooltip title="ABOUT ME" TransitionComponent={Fade}>
-            <Link to={"/aboutme"}>
-              <Button color="info">
-                <InfoIcon sx={{ fontSize: { xs: "30px", md: "35px" } }} />
-              </Button>
-            </Link>
           </Tooltip>
         </Box>
       </Box>
